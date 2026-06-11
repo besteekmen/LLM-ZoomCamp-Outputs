@@ -29,7 +29,30 @@ If the version appears, the requirement is satisfied.
 
 ## 3. Install WSL2 + Ubuntu
 
-The course explicitly recommends this for Windows. Docker works much more smoothly through WSL2.
+The course explicitly recommends this for Windows since Docker works much more smoothly through WSL2. Before installation, check whether WSL is already installed:
+
+```python
+wsl --status
+```
+```python
+wsl --list --verbose
+```
+
+If it is not installed, open PowerShell as administrator and run:
+
+```python
+wsl --install
+```
+
+This installation will enable WSL (Windows Subsystem for Linux), enable Virtual Machine Platform, install WSL2 and install Ubuntu (usually the latest LTS release). Later reboot the Windows and launch Ubuntu from the Start Menu. When asked, create username and password. 
+At the Linux promt, run:
+
+```python
+uname -a
+```
+```python
+pwd
+```
 
 ## 4. Install Docker Desktop
 
