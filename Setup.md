@@ -1,5 +1,5 @@
 # **Overall Setup Plan**
-This is the setup steps for a Windows 11 Pro laptop with Visual Studio Code, Python 3.13 and Git preinstalled.
+These are the setup steps for a Windows 11 Pro laptop with Visual Studio Code, Python 3.13 and Git preinstalled.
 ## 1. Verify Python version
 Open PowerShell (not Command Prompt) and run:
 ```python
@@ -10,7 +10,7 @@ or if that fails
 py --version
 ```
 
-If version is 3.10+, it already satisfies the Zoomcamp requirement.
+If the version is 3.10+, it already satisfies the Zoomcamp requirement.
 
 ## 2. Install uv
 ```uv``` is used for Python dependency management in Zoomcamp projects and it won't interfere with existing PyCharm/VS Code projects using ```pip``` or ```conda```. It is faster and handles virtual environments cleanly. See the [uv documentation](https://docs.astral.sh/uv/) for details.
@@ -74,27 +74,44 @@ docker --version
 ```python
 docker run hello-world
 ```
-which will show an output like:
-![Docker WSL integration](images/ubuntu_docker.png)
+which will print a Docker version, download a small image, run a container and print a "Hello from Docker!" message.
 
-## 5. Verify Docker works inside Ubuntu
+## 5. Verify Git
 
-Run a test container.
+Check whether git is already installed in Ubuntu with:
+```python
+git --version
+```
 
-## 6. Install Git (if not already installed)
-## 7. Create a dedicated Zoomcamp workspace
+## 6. Create a dedicated Zoomcamp workspace
 
-Separate folder from your existing projects.
+In Ubuntu, create a separate folder from your existing projects dedicated to zoomcamp:
 
-## 8. Configure VS Code for WSL
+```python
+mkdir -p ~/zoomcamp
+cd ~/zoomcamp
+pwd
+```
 
-Allows editing Linux files from Windows.
+## 7. Configure VS Code for WSL
+To check and install VS Code Server for Linux, in Ubuntu, run:
 
-## 9. Install Jupyter support
+```python
+code .
+```
+This will allow editing Linux files from Windows.
 
-Needed for notebooks.
+## 8. Install Jupyter support
+
+Needed for notebooks. Avoid installing Jupyter globally to prevent a mess of kernels and environments. It's better to install Jupyter inside the Zoomcamp project environment when the course actually needs it.
 
 ## 10. Choose and configure an LLM provider
 
-OpenAI if you want experience with the industry-standard API.
+Pick OpenAI to experience with the industry-standard API. Go to [OpenAI Platform](https://platform.openai.com/?utm_source=chatgpt.com):
+- Sign in (or create an account).
+- Go to the desired project.
+- Add a small amount of credit (e.g. $5–10).
+- Create an API key.
+- Save the API key somewhere safe when it is shown. **OpenAI only shows the full key once.**
+
 ## 11. Clone the Zoomcamp repository
