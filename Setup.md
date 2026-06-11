@@ -63,9 +63,19 @@ to print the working directory.
 
 ## 4. Install Docker Desktop
 
-Download the Windows installer from [Docker website](https://www.docker.com/products/docker-desktop/?utm_source=chatgpt.com).
+Download the Windows installer from [Docker website](https://www.docker.com/products/docker-desktop/?utm_source=chatgpt.com). While running the installer, make sure "Use WSL 2 instead of Hyper-V" is checked. Reboot if requested. After signing in, verify that Docker and WSL are connected correctly. In Docker Desktop, go to Settings -> Resources -> WSL Integration and enable the downloaded Ubuntu version. 
 
-Configure it to use WSL2.
+![Docker WSL integration](images/docker_wsl.png)
+
+To test Docker in Ubuntu, launch Ubuntu and run:
+```python
+docker --version
+```
+```python
+docker run hello-world
+```
+which will show an output like:
+![Docker WSL integration](images/ubuntu_docker.png)
 
 ## 5. Verify Docker works inside Ubuntu
 
