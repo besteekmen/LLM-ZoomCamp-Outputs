@@ -13,7 +13,7 @@ py --version
 If version is 3.10+, it already satisfies the Zoomcamp requirement.
 
 ## 2. Install uv
-```uv``` is used for Python dependency management in Zoomcamp projects and it won't interfere with existing PyCharm/VS Code projects using ```pip``` or ```conda```. It is faster and handles virtual environments cleanly. See the [uv documentation]([https://docs.github.com](https://docs.astral.sh/uv/)) for details.
+```uv``` is used for Python dependency management in Zoomcamp projects and it won't interfere with existing PyCharm/VS Code projects using ```pip``` or ```conda```. It is faster and handles virtual environments cleanly. See the [uv documentation](https://docs.astral.sh/uv/) for details.
 
 Open PowerShell and run: 
 
@@ -34,9 +34,6 @@ The course explicitly recommends this for Windows since Docker works much more s
 ```python
 wsl --status
 ```
-```python
-wsl --list --verbose
-```
 
 If it is not installed, open PowerShell as administrator and run:
 
@@ -44,17 +41,29 @@ If it is not installed, open PowerShell as administrator and run:
 wsl --install
 ```
 
-This installation will enable WSL (Windows Subsystem for Linux), enable Virtual Machine Platform, install WSL2 and install Ubuntu (usually the latest LTS release). Later reboot the Windows and launch Ubuntu from the Start Menu. When asked, create username and password. 
-At the Linux promt, run:
+This installation will enable WSL (Windows Subsystem for Linux), enable Virtual Machine Platform, install WSL2 and usually install Ubuntu (usually the latest LTS release). Later, reboot Windows if requested and check what is installed:
+```python
+wsl --list --online
+```
+
+If no Linux distribution is loaded, install one with long-term support. Here, Ubuntu 24.04 LTS is preferred.
+```python
+wsl --install -d Ubuntu-24.04
+```
+After the installation, Ubuntu will start automatically. If not, launch Ubuntu from the Start Menu and when asked, create a username and password. At the Linux prompt, run:
 
 ```python
 uname -a
 ```
+to print all available system information in a single line and 
 ```python
 pwd
 ```
+to print the working directory.
 
 ## 4. Install Docker Desktop
+
+Download the Windows installer from [Docker website](https://www.docker.com/products/docker-desktop/?utm_source=chatgpt.com).
 
 Configure it to use WSL2.
 
