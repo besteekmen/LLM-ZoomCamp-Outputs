@@ -105,7 +105,7 @@ This will allow editing Linux files from Windows.
 
 Needed for notebooks. Avoid installing Jupyter globally to prevent a mess of kernels and environments. It's better to install Jupyter inside the Zoomcamp project environment when the course actually needs it.
 
-## 10. Choose and configure an LLM provider
+## 9. Choose and configure an LLM provider
 
 Pick OpenAI to experience with the industry-standard API. Go to [OpenAI Platform](https://platform.openai.com/?utm_source=chatgpt.com):
 - Sign in (or create an account).
@@ -114,4 +114,10 @@ Pick OpenAI to experience with the industry-standard API. Go to [OpenAI Platform
 - Create an API key.
 - Save the API key somewhere safe when it is shown. **OpenAI only shows the full key once.**
 
-## 11. Clone the Zoomcamp repository
+## 10. Clone the Zoomcamp repository
+
+## Notes:
+Deferred until needed
+⏳ OpenAI API key
+⏳ Jupyter
+⏳ Module-specific dependencies
