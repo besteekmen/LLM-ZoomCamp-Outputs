@@ -79,3 +79,7 @@ class RAGBase:
         prompt = self.build_prompt(query, search_results)
         answer = self.llm(prompt)
         return answer
+    
+# to use another client other than OpenAI, extend the base class
+class OllamaRAG(RAGBase):
+    pass
