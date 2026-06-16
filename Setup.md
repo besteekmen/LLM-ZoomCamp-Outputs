@@ -114,7 +114,11 @@ Pick OpenAI to experience with the industry-standard API. Go to [OpenAI Platform
 - Create an API key.
 - Save the API key somewhere safe when it is shown. **OpenAI only shows the full key once.**
 
-## 10. Clone the Zoomcamp repository
+## 10. Others
+TODO: #1 Add details on how to use codespace and open it on your own pc
+TODO: #2 Explain the parts about load dotenv and running the python version
+TODO: #3 Check https://github.com/DataTalksClub/llm-zoomcamp/blob/main/01-agentic-rag/lessons/02-environment.md and add accordingly
+First install the libs then run the first cell to select env
 
 ## Notes:
 Deferred until needed
