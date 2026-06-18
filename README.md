@@ -36,6 +36,6 @@ Throughout this cohort, I am building hands-on experience with:
 
 ## 🤝 Connect with Me
 
-- **GitHub:** [@your-username](https://github.com/besteekmen)
-- **LinkedIn:** [Your Name](https://linkedin.com/in/besteekmen)
+- **GitHub:** [@besteekmen](https://github.com/besteekmen)
+- **LinkedIn:** [Beste Ekmen](https://linkedin.com/in/besteekmen)
 - **Slack:** Find me in the DataTalksClub `#course-llm-zoomcamp` channel!
