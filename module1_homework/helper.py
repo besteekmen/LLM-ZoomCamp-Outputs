@@ -44,20 +44,11 @@ class RAGBase:
             content = doc['content']
             
             # 2. Strip the changing footer line if '\n\n' exists
-            if '\n\n' in content:
-                content = content.rsplit('\n\n', 1)[0]
+            #if '\n\n' in content:
+            #    content = content.rsplit('\n\n', 1)[0]
                 
             # 3. Append the cleaned content and the spacer
             lines.append(content)
-            lines.append('')
-        
-        return '\n'.join(lines).strip()
-    
-    def build_context2(self, search_results):
-        lines = []
-    
-        for doc in search_results:
-            lines.append(doc['content'])
             lines.append('')
         
         return '\n'.join(lines).strip()
