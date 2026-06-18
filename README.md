@@ -18,9 +18,10 @@ If you are running your environment on Windows, I have documented a dedicated se
 
 The repository is organized by course modules. For each module, there is a course folder and a homework folder containing class and homework files respectively.
 
-*   📂 **`module1_agentic-rag/`** - Agentic RAG, basic keyword search, and building an initial pipeline.
-*   📂 **`module1_homework/`** - Assignment on an agentic RAG for lesson notes using chunked search.
+*   📂 **[Module 1: Agentic RAG](./module1_agentic-rag/)** - Agentic RAG, basic keyword search, and building an initial pipeline.
+*   📂 **[Module 1: Homework](./module1_homework/)** - Assignment on an agentic RAG for lesson notes using chunked search.
 *   🚀 **`capstone-project/`** - *[Coming Soon]* My final custom end-to-end RAG application.
+
 
 ---
 
