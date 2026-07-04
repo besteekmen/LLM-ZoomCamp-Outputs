@@ -22,6 +22,7 @@ The repository is organized by course modules. For each module, there is a cours
 *   📂 **[Module 1: Homework](./module1_homework/)** - Assignment on an agentic RAG for lesson notes using chunked search.
 *   📂 **[Module 2: Vector Search](./module2_vector-search/)** - Semantic search with embeddings.
 *   📂 **[Module 2: Homework](./module2_homework/)** - Assignment on vector search for lesson notes using chunked search and ONNX.
+*   📂 **[Module 3: Homework](./module3_homework/)** - Assignment on AI Orchestration with Kestra.
 *   🚀 **`capstone-project/`** - *[Coming Soon]* My final custom end-to-end RAG application.
 
 
