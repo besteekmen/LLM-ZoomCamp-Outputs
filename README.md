@@ -16,7 +16,7 @@ If you are running your environment on Windows, I have documented a dedicated se
 
 ## 📂 Repository Structure
 
-The repository is organized by course modules. For each module, there is a course folder and a homework folder containing class and homework files respectively.
+The repository is organized by course modules. For each module, there is a course folder and a homework folder containing class and homework files, respectively.
 
 *   📂 **[Module 1: Agentic RAG](./module1_agentic-rag/)** - Agentic RAG, basic keyword search, and building an initial pipeline.
 *   📂 **[Module 1: Homework](./module1_homework/)** - Assignment on an agentic RAG for lesson notes using chunked search.
