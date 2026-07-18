@@ -7,3 +7,8 @@ faq.db*
 module2_homework/models
 module2_homework/download.py
 module2_homework/embedder.py
+module4_homework/models
+module4_homework/download.py
+module4_homework/embedder.py
+module5_monitoring/.env
+module5_monitoring/.venv
