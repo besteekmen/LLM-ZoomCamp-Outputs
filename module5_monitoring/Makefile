@@ -17,3 +17,7 @@ postgres: network
 		-p 5432:5432 \
 		-v pgdata:/var/lib/postgresql/data \
 		postgres:17
+
+getlist:
+	docker exec -it course-assistant-pg psql -U user -d course_assistant \
+    -c "SELECT id, question, response_time, cost FROM conversations;"
