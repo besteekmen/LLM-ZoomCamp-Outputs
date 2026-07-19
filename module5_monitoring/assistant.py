@@ -7,6 +7,7 @@ from ingest import load_faq_data, build_index
 from metrics import RAGWithMetrics
 # from rag_helper import RAGBase
 
+from db_save import save_conversation
 
 def create_assistant():
     # make sure .env file is loaded (working directory is important here)
@@ -34,3 +35,5 @@ if __name__ == "__main__":
 
     answer = assistant.rag(query)
     print(answer)
+
+    save_conversation(assistant.last_call, query, "llm-zoomcamp")
