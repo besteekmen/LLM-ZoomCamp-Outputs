@@ -27,4 +27,5 @@ dependencies = [
 [tool.uv.workspace]
 members = [
     "module5_homework",
+    "dlt_homework",
 ]
