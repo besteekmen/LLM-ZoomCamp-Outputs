@@ -23,3 +23,8 @@ dependencies = [
     "toyaikit>=0.0.11",
     "tqdm>=4.68.2",
 ]
+
+[tool.uv.workspace]
+members = [
+    "module5_homework",
+]
