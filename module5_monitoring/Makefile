@@ -27,3 +27,6 @@ query:
 
 dashboard:
 	uv run streamlit run dashboard.py --server.port 8502
+
+judge:
+	uv run python judge.py
