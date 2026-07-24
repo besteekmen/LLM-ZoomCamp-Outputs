@@ -30,3 +30,6 @@ dashboard:
 
 judge:
 	uv run python judge.py
+
+fakedata:
+	uv run python generate_data.py
