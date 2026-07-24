@@ -18,6 +18,15 @@ postgres: network
 		-v pgdata:/var/lib/postgresql/data \
 		postgres:17
 
+# use detached mode (-d rather than -it) to hide logs
+grafana:
+	docker run -it \
+		--name grafana \
+		--network monitoring \
+		-p 3000:3000 \
+		-v grafana_data:/var/lib/grafana \
+		grafana/grafana
+
 getlist:
 	docker exec -it course-assistant-pg psql -U user -d course_assistant \
     -c "SELECT id, question, response_time, cost FROM conversations;"
