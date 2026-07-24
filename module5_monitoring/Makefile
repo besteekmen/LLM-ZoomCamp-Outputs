@@ -7,6 +7,8 @@ chat:
 network:
 	docker network create monitoring
 
+# if codespase is turned off, use docker rm -f course-assistant-pg
+# then call below as docker run -it...
 postgres: network
 	docker run -it \
 		--name course-assistant-pg \
@@ -19,6 +21,7 @@ postgres: network
 		postgres:17
 
 # use detached mode (-d rather than -it) to hide logs
+# if codespase is turned off, use docker start grafana
 grafana:
 	docker run -it \
 		--name grafana \
@@ -31,6 +34,11 @@ getlist:
 	docker exec -it course-assistant-pg psql -U user -d course_assistant \
     -c "SELECT id, question, response_time, cost FROM conversations;"
 
+getlistdocker:
+	docker compose exec postgres \
+		psql -U user -d course_assistant \
+		-c "SELECT id, question, response_time, cost FROM conversations;"
+
 query:
 	uv run python db_query.py
 
@@ -42,3 +50,6 @@ judge:
 
 fakedata:
 	uv run python generate_data.py
+
+fakedatadocker:
+	docker compose exec streamlit python generate_data.py
