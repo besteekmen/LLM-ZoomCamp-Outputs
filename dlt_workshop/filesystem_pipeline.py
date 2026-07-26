@@ -78,6 +78,7 @@ def raw_reader(agent: str):
                     rows.append(
                         {
                             "agent": agent,
+                            "project": rel_path.split("/")[0],
                             "session_id": session_id,
                             "source_file": rel_path,
                             "line_no": line_no,

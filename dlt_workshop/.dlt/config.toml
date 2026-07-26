@@ -3,3 +3,8 @@
 [runtime]
 log_level="WARNING"  # the system log level of dlt
 # use the dlthub_telemetry setting to enable/disable anonymous usage data reporting, see https://dlthub.com/docs/reference/telemetry
+workspace_id = "9f4b25a8-5ba2-44ca-b849-e54c308cbc14"
+organization_id = "77913043-f18b-4eb4-9c19-555a792c7c2b"
+
+[workspace.settings]
+name = "playground"
