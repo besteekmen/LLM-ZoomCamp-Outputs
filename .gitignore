@@ -12,3 +12,7 @@ module4_homework/download.py
 module4_homework/embedder.py
 module5_monitoring/.env
 module5_monitoring/.venv
+dlt_workshop/.env
+dlt_homework/.env
+dlt_workshop/.venv
+dlt_homework/.venv

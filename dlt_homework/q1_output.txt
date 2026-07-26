@@ -1,0 +1,47 @@
+19:49:22.346 faq_agent run
+19:49:22.348   chat gpt-5.4-mini
+19:49:24.469   running tool: search
+19:49:24.478   chat gpt-5.4-mini
+To run Ollama locally:
+
+1. **Install Ollama** from https://ollama.com/download  
+   - **macOS**: download the `.pkg`  
+   - **Windows**: download the `.msi`  
+   - **Linux**: run:
+   ```bash
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+2. **Start a model locally**:
+   ```bash
+   ollama run llama3
+   ```
+   This downloads the model, starts it locally, and opens a chat-like interface.
+
+3. **Test the local server**:
+   ```bash
+   curl http://localhost:11434
+   ```
+   You should get a response like:
+   ```json
+   {"models": [...]}
+   ```
+
+4. **Optional: use the Python client**:
+   ```bash
+   pip install ollama
+   ```
+
+   Example:
+   ```python
+   import ollama
+
+   response = ollama.chat(
+       model='llama3',
+       messages=[{"role": "user", "content": your_prompt}]
+   )
+
+   print(response['message']['content'])
+   ```
+
+If you want, I can also help with running Ollama in the course notebook or troubleshooting connection issues. Are there other areas that you want to explore?

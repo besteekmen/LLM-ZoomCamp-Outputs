@@ -1,0 +1,32 @@
+============================================================
+Q2 - dlt Homework
+============================================================
+
+Number of tables:
+[(24,)]
+
+Tables:
+_dlt_loads
+_dlt_pipeline_state
+_dlt_version
+spans
+spans__datatype__timestamp
+spans__values
+spans__values__gen_ai_input_messages
+spans__values__gen_ai_input_messages__parts
+spans__values__gen_ai_input_messages__parts__result
+spans__values__gen_ai_output_messages
+spans__values__gen_ai_output_messages__parts
+spans__values__gen_ai_response_finish_reasons
+spans__values__gen_ai_system_instructions
+spans__values__gen_ai_tool_call_result
+spans__values__gen_ai_tool_definitions
+spans__values__gen_ai_tool_definitions__parameters__required
+spans__values__logfire_metrics__gen_ai_client_token_usage__details
+spans__values__logfire_metrics__operation_cost__details
+spans__values__model_request_parameters__function_tools
+spans__values__model_request_parameters__function_tools__parameters_json_schema__required
+spans__values__model_request_parameters__instruction_parts
+spans__values__pydantic_ai_all_messages
+spans__values__pydantic_ai_all_messages__parts
+spans__values__pydantic_ai_all_messages__parts__result
